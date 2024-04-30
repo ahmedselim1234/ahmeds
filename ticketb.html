@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tickets</title>
+    <link rel="stylesheet" href="css/ticketb.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="js/javab.js"></script>
+</head>
+
+<body class="bodyt-b">
+    <div>
+        <!-- nav bar -->
+        <nav class="navG">
+            <div id="logoG">
+                <img src="images/logo.png" alt="logo" class="logoG">
+                <p>Egyptian Treasures</p>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="index.html" onmouseover="over1()" onmouseout="out1()" id="icon1G">Home</a></li>
+                    <li><a href="bookticketz.html" onmouseover="over2()" onmouseout="out2()" id="icon2G">Tickets</a></li>
+                    <li><a href="aboutusc.html" onmouseover="over3()" onmouseout="out3()" id="icon3G">About</a></li>
+                    <li><a href="logine.html" onmouseover="over4()" onmouseout="out4()" id="icon4G">Login</a></li>
+                </ul>
+            </div>
+            <div class="iconsG">
+                <a href="registerb.html"><img src="images/person_icon.png" alt="person icon" class="personiconG"></a>
+                <a href="searchg.html"><img src="images/search_icon.png" alt="search icon" class="searchiconG"></a>
+            </div>
+        </nav>
+    </div>
+    <div class="background2-b">
+        <!-- look at this br again! -->
+        <h1 class="h1t-b">Book Your Ticket Now</h1>
+        <br>
+        <form action="" method="post" id="form">
+            <div class="name-b">
+                <label class="labelt-b">Full Name</label>
+                <input type="text" id="name" placeholder="Write Your Name" required class="inputt-b">
+                <div class="error"></div>
+            </div>
+            <br>
+            <div class="email-b">
+                <label class="labelt-b">Email</label>
+                <input type=" email" name="" id="email" placeholder="Email Address" required class="inputt-b">
+                <div class="error"></div>
+            </div>
+            <br>
+            <div class="phone-b">
+                <label class="labelt-b">Mobile Phone</label>
+                <input type="text" placeholder="Phone Number" minlength="11" maxlength="11" required class="inputt-b">
+                <div class="error"></div>
+            </div>
+            <br><br>
+            <p class="pt-b">Choose which day you want to book your ticket:</p>
+            <br>
+            <div>
+                <label class="labelt-b">Date</label>
+                <input type="date" required class="inputt-b">
+            </div>
+            <br><br>
+            <div>
+                <h2 class="h2t-b"><i class="fa-solid fa-door-open"></i>Opening Time <br> <span>9:00</span>am to
+                    <span>5:00</span>pm
+                </h2>
+                <br>
+                <span class="details-b">
+                    FOREIGNERS:
+                    adults: 500 EGP/ students: 250 EGP
+                    <br>
+                    EGYPTIANS:
+                    adults: 80 EGP/ students: 40 EGP
+                    <br>
+                    Audio tour: 30 EGP
+                    <br>
+                    Free entrance for children under 6 years
+                </span>
+            </div>
+            <br><br>
+            <p class="pt-b">Choose how many tickets you want to buy: </p>
+            <br>
+            <div>
+                <h4>EGYPTIANS:</h4>
+                <br>
+                <label for="num" class="labelt-b">Adult</label>
+                <input id="number-b" type="number" placeholder="Number of EGY Adults" min="0" required class="inputt-b">
+                <label for="num" class="labelt-b">Student</label>
+                <input id="number-b" type="number" placeholder="Number of EGY Stud" min="0" required class="inputt-b">
+                <br>
+                <br>
+                <h4>FOREIGNERS:</h4>
+                <br>
+                <label for="num" class="labelt-b">Adult</label>
+                <input id="number-b" type="number" placeholder="Number of FOREIG Adults" min="0" required
+                    class="inputt-b">
+                <label for="num" class="labelt-b">Student</label>
+                <input id="number-b" type="number" placeholder="Number of FOREIG Stud" min="0" required
+                    class="inputt-b">
+            </div>
+            <br>
+            <div>
+                <p class="pt-b">Pay Method</p>
+                <br>
+                <input class="cash-b" type="radio" name="pay" value="Cash" class="inputt-b">
+                <label for="cash" class="labelt-b">Cash</label>
+            </div>
+            <br>
+            <div>
+                <input class="visa-b" type="radio" name="pay" value="Visa" class="inputt-b">
+                <label for="visa" class="labelt-b">Visa</label>
+            </div>
+            <br>
+            <div class="loc-b">
+                <i class="fa-solid fa-location-dot"></i>
+                <a id="museum-linkb"
+                    href="https://www.bing.com/maps?osid=e27d3878-f2e1-4a46-bd10-8fe32013dc4d&cp=30.006308~31.241813&lvl=16&pi=0&imgid=37cc94d5-e1f7-4fef-b92a-bf7a461af353&v=2&sV=2&form=S00027"
+                    target="_blank" class="at-b">Location</a>
+                <br><br>
+                <p class="pt-b">El-Fustat Road, Ein Elsira, Cairo</p>
+            </div>
+            <br><br>
+            <textarea name="text" id="text-b" cols="30" rows="5" placeholder="Leave your comment here"
+                class="textarea-b"></textarea>
+            <br>
+            <input type="submit" class="submit-b" id="submitb" value="SUBMIT">
+        </form>
+    </div>
+    <!-- footer -->
+    <footer class="footerG">
+        <div class="logofooterG">
+            <br><br>
+            <img src="images/logo.png" alt="logo">
+            <br>
+            <p>Egyptian Treasures</p>
+            <br><br>
+        </div>
+        <div class="contactusG">
+            <br><br>
+            <p id="contactG">Contact Us :</p>
+            <br>
+            <p>Email: Info@example.com</p>
+            <p>Phone: +1(123)456-7890</p>
+            <br>
+            <a href="feedbackc.html" onmouseover="over5()" onmouseout="out5()" id="icon5G" class="feedbackG">Feedback</a>
+        </div>
+    </footer>
+</body>
+
+</html>
